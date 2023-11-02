@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 150vh;
+  font-family: "Clash Grotesk";
+}
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  background-color: #fff;
+  padding: 0px 0px 0px 90px;
+  border-bottom: 1px solid grey;
+  height: 82px;
+  gap: 30%;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-ul li {
+  list-style-type: none;
+  font-size: 18px;
+  color: #5fbc4d;
+  font-family: Archivo;
+}
+.nav-items ul {
+  display: flex;
+  gap: 50px;
+}
+.nav-btn {
+  margin-bottom: 1.5em;
+}
+.nav-btn button {
+  cursor: pointer;
+  display: flex;
+  width: 9vw;
+  gap: 20px;
+  font-size: 18px;
+  color: #5fbc4d;
+  font-family: Archivo;
+  background: none;
+  border: none;
+  outline: none;
+}
+.nav-btn i {
+  position: relative;
+  top: 0.5em;
+}
+.nav-li {
+  position: relative;
+}
+.nav-dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  width: 15vw;
+  color: #202223;
+  padding: 8px 8px 0px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+}
+.btn {
+  padding: 15.640517234802246px 23.46077537536621px;
+  border-radius: 5.65px;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #96c0ff 0%, #5fbc4d 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.btn:hover {
+  background-position: -100% 0;
+  cursor: pointer;
+}
+.nav-dropdown div {
+  margin-bottom: 10px;
+}
+.nav-btn:hover + .nav-dropdown {
+  display: block;
+}
+
+/* First Section */
+.home-section {
+  background-image: url("/svgs/image-1@2x.png");
+  background-color: rgba(81, 81, 81, 0.31);
+  min-height: 130vh;
+  background-size: cover;
+  color: white;
+}
+.home-section div {
+  position: relative;
+  top: 9em;
+  left: 70em;
+}
+.home-section h3 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  position: relative;
+  top: 12em;
+  left: 1em;
+}
+.phone-icon {
+  height: 30px;
+}
+.booking span {
+  position: relative;
+  top: -0.4em;
+  font-size: 22.62px;
+}
+/* SECTION */
+.services {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 20px;
+}
+.services-container {
+  margin-top: -2.3em;
+}
+.services-container h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #15478c;
+  padding-left: 145px;
+  padding-top: 10px;
+  margin-bottom: 0.1em;
+}
+.box1 {
+  background-color: #fff;
+  width: 25vw;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8.02px;
+}
+.box1 div {
+  background-color: #f4f2f2;
+  border-radius: 8.02px 8.02px 0px 0px;
+  padding: 16px 16px;
+  font-size: 19.06px;
+  color: #0047b3;
+}
+.box1 p {
+  font-family: Archivo;
+  padding: 1px 16px 10px 16px;
+  color: #19345c;
+  font-size: 22px;
+}
+.box2 {
+  background-color: #fff;
+  width: 25vw;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8.02px;
+}
+.box2 div {
+  background-color: #f4f2f2;
+  border-radius: 8.02px 8.02px 0px 0px;
+  padding: 16px 16px;
+  font-size: 19.06px;
+  color: #0047b3;
+}
+.box2 p {
+  font-family: Archivo;
+  padding: 1px 16px 10px 16px;
+  color: #19345c;
+  font-size: 22px;
+}
+.box3 {
+  background-color: #fff;
+  width: 25vw;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8.02px;
+}
+.box3 div {
+  background-color: #f4f2f2;
+  border-radius: 8.02px 8.02px 0px 0px;
+  padding: 16px 16px;
+  font-size: 19.06px;
+  color: #0047b3;
+}
+.box3 p {
+  font-family: Archivo;
+  padding: 1px 16px 10px 16px;
+  color: #19345c;
+  font-size: 22px;
+}
+/* LEARN MORE */
+.training {
+  display: flex;
+  background-color: #15478c;
+  gap: 7em;
+  margin-top: 7em;
+}
+.training p {
+  width: 40vw;
+  color: #fff;
+  font-size: 24px;
+}
+.training img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+  top: -3em;
+  border-radius: 5px;
+}
+.training-container {
+  padding-left: 10em;
+  color: white;
+}
+.training-container h4 {
+  font-size: 36px;
+  font-family: "Clash Grotesk";
+}
+/* TESTIMOY */
+.testimony-head {
+  background-color: rgba(94, 188, 74, 0.03);
+  border-radius: 12px;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.testimony-head h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #15478c;
+  padding-left: 145px;
+  margin-bottom: 0.1em;
+}
+.testimony-head span {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #15478c;
+  padding-left: 145px;
+}
+.testimony-boxes {
+  display: flex;
+  gap: 20px;
+  padding-left: 140px;
+  width: 150vw;
+}
+.testimony-box1 {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 26px 20px;
+  border-radius: 8px;
+  width: 400vw;
+}
+.testimony-box1 div {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #fff;
+  background: linear-gradient(180deg, #268c15, rgba(4, 84, 119, 0.91));
+  width: 45px;
+  padding: 5px;
+}
+.testimony-box1 span {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 600;
+  color: #19345c;
+}
+.testimony-box1 p {
+  font-size: 19px;
+  color: #19345c;
+}
+.testimony-box2 {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 26px 20px;
+  border-radius: 8px;
+  width: 400vw;
+}
+.testimony-box2 div {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #fff;
+  background: linear-gradient(180deg, #268c15, rgba(4, 84, 119, 0.91));
+  width: 45px;
+  padding: 5px;
+}
+.testimony-box2 span {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 600;
+  color: #19345c;
+}
+.testimony-box2 p {
+  font-size: 19px;
+  color: #19345c;
+}
+.testimony-box3 {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 26px 20px;
+  border-radius: 8px;
+  width: 400vw;
+}
+.testimony-box3 div {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  color: #fff;
+  background: linear-gradient(180deg, #268c15, rgba(4, 84, 119, 0.91));
+  width: 45px;
+  padding: 5px;
+}
+.testimony-box3 span {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 600;
+  color: #19345c;
+}
+.testimony-box3 p {
+  font-size: 19px;
+  color: #19345c;
+}
+/* GALLERY */
+.gallery {
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+  gap: 10px;
+}
+.sub-gallery {
+  display: flex;
+  gap: 10px;
+}
+.gallery-image {
+  /* width: 30vw; */
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallery-text {
+  font-size: 36px;
+  color: #15478c;
+  padding-left: 140px;
+  margin-bottom: 20px;
+}
+/* SCHEDULE */
+.schedule {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 140px;
+  margin-right: 85px;
+  border-radius: 4px;
+  background-color: rgba(67, 132, 52, 0.53);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  gap: 3px;
+}
+.schedule1 {
+  text-align: center;
+  border-right: 1px solid white;
+}
+.schedule2 {
+  text-align: center;
+}
