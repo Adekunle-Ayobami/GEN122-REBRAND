@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 150vh;
+  font-family: "Clash Grotesk";
+}
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  background-color: #fff;
+  padding: 1% 0% 0% 5%;
+  border-bottom: 1px solid grey;
+  height: 82px;
+  gap: 30%;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-ul a {
+  text-decoration: none;
+}
+.nav-ul li {
+  list-style-type: none;
+  font-size: 18px;
+  color: #5fbc4d;
+}
+.nav-items ul {
+  display: flex;
+  gap: 50px;
+}
+.nav-btn {
+  margin-bottom: 1.5em;
+}
+.nav-btn button {
+  cursor: pointer;
+  display: flex;
+  width: 9vw;
+  gap: 20px;
+  font-size: 18px;
+  color: #5fbc4d;
+  font-family: Archivo;
+  background: none;
+  border: none;
+  outline: none;
+}
+.nav-btn i {
+  position: relative;
+  top: 0.7em;
+  right: 1em;
+}
+.nav-dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  width: 15vw;
+  color: #202223;
+  padding: 8px 8px 0px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+}
+.nav-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.nav-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.nav-btn:hover .nav-dropdown {
+  display: block;
+}
+.btn {
+  padding: 15px 23px;
+  border-radius: 5.65px;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #96c0ff 0%, #5fbc4d 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.btn:hover {
+  background-position: -100% 0;
+  cursor: pointer;
+}
+.nav-dropdown div {
+  margin-bottom: 10px;
+}
+.nav-btn:hover + .nav-dropdown {
+  display: block;
+}
+
+/* First Section */
+.home-section {
+  background-image: url("/svgs/image\ 14.png");
+  background-color: rgba(81, 81, 81, 0.31);
+  min-height: 130vh;
+  background-size: cover;
+  color: white;
+}
+.home-section h3 {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  position: relative;
+  top: 12em;
+  left: 3%;
+}
+.home-section p {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Clash Grotesk";
+  position: relative;
+  top: 22em;
+  left: 3%;
+}
+/* LEARN MORE */
+.training {
+  display: flex;
+  background-color: #15478c;
+  gap: 7em;
+  padding: 3%;
+  align-items: center;
+}
+.training p {
+  width: 40vw;
+  color: #fff;
+  font-size: 22px;
+}
+.training img {
+  width: 450px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.training-container {
+  padding-left: 10em;
+  color: white;
+}
+.training-container h4 {
+  font-size: 36px;
+  font-family: "Clash Grotesk";
+}
+/* GALLERY */
+.gallery {
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 3%;
+}
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+  gap: 10px;
+}
+.sub-gallery {
+  display: flex;
+  gap: 10px;
+}
+.gallery-image {
+  /* width: 30vw; */
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallery-text {
+  font-size: 36px;
+  color: #15478c;
+  padding-left: 140px;
+  margin-bottom: 20px;
+}
+/* APPLY HERE */
+.apply {
+  display: flex;
+  background-color: #15478c;
+  color: #fff;
+  justify-content: space-around;
+}
+.apply h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: -3%;
+}
+.apply p {
+  font-size: 24px;
+  width: 60%;
+}
+.apply button {
+    margin-top: 70%;
+}
+/* INFORMATION */
+.info-container {
+  background-color: #f4f2f2;
+  padding-bottom: 4%;
+}
+.info {
+  display: flex;
+  gap: 4%;
+  margin-left: 10%;
+  padding-top: 2%;
+}
+.info-about,
+.info-service,
+.info-training,
+.info-contact {
+  display: flex;
+  flex-direction: column;
+}
+.info-address {
+  font-size: 19px;
+  color: #15478c;
+}
+.info-address h5 {
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+.info-address img {
+  width: 75%;
+}
+.info-about,
+.info-service,
+.info-training {
+  gap: 8%;
+}
+.info-about h5,
+.info-service h5,
+.info-training h5 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 22px;
+  color: #15478c;
+}
+.info-contact h5 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #15478c;
+  width: 80%;
+}
+.info-about span,
+.info-service span,
+.info-training span,
+.info-contact {
+  font-size: 19px;
+  color: #15478c;
+}
+.info-contact button {
+  width: 50%;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  background-color: #15294b;
+  color: #fff;
+  justify-content: space-around;
+  padding: 2.4%;
+}
