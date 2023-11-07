@@ -20,27 +20,28 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <a href="index.html">
+        <a href="./index.html">
           <div>
             <img src="svgs/Untitled-1-removebg-preview (1) 1.png" alt="" />
           </div>
         </a>
         <div class="nav-items">
           <ul class="nav-ul">
-            <a href="about.html"><li>About Us</li></a>
-            <a href="services.html"><li>Services</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
             <li class="nav-btn">
               <button id="dropdown-button">
                 Training<i class="fa-solid fa-circle-chevron-down fa-sm"></i>
               </button>
               <div class="nav-dropdown" id="dropdown-content">
-                <a href="#">Healthcare Training</a>
-                <a href="#">Certified Nursing Assistant</a>
-                <a href="#">Training</a>
-                <a href="#">IELTS Training</a>
+                <a href="./training.html">Healthcare Training</a>
+                <a href="./certification.html"
+                  >Certified Nursing Assistant Training</a
+                >
+                <a href="./ielts-training.html">IELTS Training</a>
               </div>
             </li>
-            <li>Pricing</li>
+            <a href="./pricing.html"><li>Pricing</li></a>
             <li><button class="btn">Register</button></li>
           </ul>
         </div>
@@ -49,14 +50,16 @@
 
     <section>
       <div class="home-section">
-        <div class="booking">
-          <img
-            class="phone-icon"
-            src="/svgs/icons8mobilephone96@2x.png"
-            alt=""
-          />
-          <span>Book a Call</span>
-        </div>
+        <a href="./booking-page.html">
+          <div class="booking">
+            <img
+              class="phone-icon"
+              src="/svgs/icons8mobilephone96@2x.png"
+              alt=""
+            />
+            <span>Book a Call</span>
+          </div>
+        </a>
         <h3>
           Gain Expertise and Confidence through <br />
           Cutting-Edge Training Programs
@@ -97,14 +100,14 @@
         <div class="training-container">
           <h4>Our Training</h4>
           <p>
-            Our training are in three major phases - Health Care Assistant, CNA
-            and we prepare applicants of the international English Language Test
-            System (IELTS)
+            Our training are in three major phases - Health Care Assistant,
+            Level 3 Diploma in Health & social Care, CNA and we prepare
+            applicants of the international English Language Test System (IELTS)
           </p>
-          <button class="btn">Learn More</button>
+          <a href="./training.html"><button class="btn">Learn More</button></a>
         </div>
         <div>
-          <img src="/svgs/whatsapp-image-20230627-at-1225-1@2x.png" alt="" />
+          <img src="svgs/whatsapp-image-20230627-at-1225-1@2x.png" alt="" />
         </div>
       </div>
       <div class="testimony">
@@ -199,7 +202,9 @@
             Kindly fill out the form provided. We value your feedback and
             eagerly anticipate the opportunity to connect with you.
           </p>
-          <button>Request an Appointment</button>
+          <a href="./booking-page.html"
+            ><button>Request an Appointment</button></a
+          >
         </div>
         <div class="schedule2">
           <img src="svgs/icons8today64-3-1@2x.png" alt="" />
@@ -208,7 +213,7 @@
             We look forward to providing ypu with the best training experience
             possible. Book your slot now
           </p>
-          <button>Apply Now</button>
+          <a href="#"><button>Apply Now</button></a>
         </div>
       </div>
 
@@ -222,7 +227,7 @@
             <img src="svgs/Untitled-1-removebg-preview (1) 1.png" alt="" />
             <h5>Office Address</h5>
             <span>31 UNity Road, Ikeja Lagos State</span>
-            <span>Email: csofficer@gn128.com</span>
+            <span>Email: htofficer@gn122.com</span>
           </div>
           <div class="info-about">
             <h5>About Us</h5>
@@ -239,6 +244,7 @@
           <div class="info-training">
             <h5>Training</h5>
             <span>Healthcare</span>
+            <span>Level 3 Diploma in Health & Social Care</span>
             <span>CNA</span>
             <span>IELTS</span>
           </div>
@@ -247,7 +253,9 @@
             <span>With the best of the best</span>
             <span>Email</span>
             <hr />
-            <button class="btn">GET IN TOUCH</button>
+            <a href="./booking-page.html"
+              ><button class="btn">GET IN TOUCH</button></a
+            >
           </div>
         </div>
       </div>
@@ -264,6 +272,14 @@
         <i class="fa-brands fa-instagram fa-2xl"></i>
       </div>
     </footer>
+
+    <div class="whatsapp">
+      <span>Chat with us</span>
+      <a href="https://wa.me/23407061464315">
+        <img src="/svgs/whatsapp image.jpeg" alt="" />
+      </a>
+    </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const dropdownButton = document.getElementById("dropdown-button");

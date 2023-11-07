@@ -84,8 +84,22 @@ body {
   background-size: 200% 100%;
   transition: background-position 0.3s ease-in-out;
 }
+.btn1 {
+  padding: 15px 23px;
+  border-radius: 5.65px;
+  border: none;
+  color: #0047b3;
+  background: linear-gradient(to right, #fff 0%, blue 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
 .btn:hover {
   background-position: -100% 0;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-position: -100% 0;
+  color: #fff;
   cursor: pointer;
 }
 .nav-dropdown div {
@@ -97,7 +111,7 @@ body {
 
 /* First Section */
 .home-section {
-  background-image: url("/svgs/image\ 14.png");
+  background-image: url("/svgs/image\ 12.png");
   background-color: rgba(81, 81, 81, 0.31);
   min-height: 130vh;
   background-size: cover;
@@ -108,7 +122,7 @@ body {
   font-weight: 600;
   font-family: "Clash Grotesk";
   position: relative;
-  top: 12em;
+  top: 13.5em;
   left: 10%;
 }
 .home-section p {
@@ -116,88 +130,77 @@ body {
   font-weight: 600;
   font-family: "Clash Grotesk";
   position: relative;
-  top: 22em;
+  top: 25em;
   left: 10%;
-  width: 50%;
 }
-/* LEARN MORE */
+.home-section button {
+  position: relative;
+  top: 44em;
+  left: 10%;
+}
+
+/* TRAINING */
 .training {
-  display: flex;
-  background-color: #15478c;
-  gap: 7em;
-  padding: 3%;
-  align-items: center;
-}
-.training p {
-  width: 40vw;
-  color: #fff;
-  font-size: 22px;
-}
-.training img {
-  width: 450px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 5px;
   margin-top: 5%;
   margin-left: 10%;
+  width: 75%;
+  font-size: 18px;
+  color: #19345c;
+  font-weight: bold;
 }
-.training-container {
-  padding-left: 10em;
-  color: white;
+/* QUESTIONS */
+.questions {
+  margin-left: 10%;
+  margin-bottom: 4%;
 }
-.training-container h4 {
-  font-size: 36px;
-  font-family: "Clash Grotesk";
+.questions h3 {
+  font-size: 25px;
+  color: #19345c;
 }
-/* GALLERY */
-.gallery {
+.faq-item {
+  background-color: blue;
+  padding: 2%;
   border-radius: 12px;
-  background-color: #f4f4f4;
-  margin-top: 40px;
-  padding-top: 20px;
-  padding-bottom: 3%;
-}
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 140px;
-  gap: 10px;
-}
-.sub-gallery {
-  display: flex;
-  gap: 10px;
-}
-.gallery-image {
-  /* width: 30vw; */
-  height: 60vh;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.gallery-text {
-  font-size: 36px;
-  color: #15478c;
-  padding-left: 140px;
-  margin-bottom: 20px;
-}
-/* APPLY HERE */
-.apply {
-  display: flex;
-  background-color: #15478c;
   color: #fff;
-  justify-content: space-around;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 84%;
 }
-.apply h3 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: -3%;
+.faq-item.clicked {
+  background-color: #f4f2f2;
+  color: black;
 }
-.apply p {
-  font-size: 24px;
-  width: 60%;
+.faq-item.clicked .dropdown-icon {
+  transform: rotate(180deg);
 }
-.apply button {
-  margin-top: 70%;
+.question {
+  font-weight: bold;
+  cursor: pointer;
 }
+.d1 {
+  margin-left: 67.6%;
+}
+.d2 {
+  margin-left: 63.6%;
+}
+.d3 {
+  margin-left: 78.6%;
+}
+.d4 {
+  margin-left: 81.7%;
+}
+.d5 {
+  margin-left: 76%;
+}
+.answer {
+  display: none;
+  padding: 10px;
+  background-color: #f4f2f2;
+  font-size: 17px;
+  transition: display 0.3s, background-color 0.3s;
+}
+
 /* INFORMATION */
 .info-container {
   background-color: #f4f2f2;
@@ -216,16 +219,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-.info-about {
-  width: 10%;
-}
 .info-address {
-  font-size: 15px;
+  font-size: 19px;
   color: #15478c;
-  width: 18%;
 }
 .info-address h5 {
-  font-size: 19px;
+  font-size: 22px;
   margin-bottom: 2px;
 }
 .info-address img {
@@ -234,23 +233,20 @@ body {
 .info-about,
 .info-service,
 .info-training {
-  gap: 6%;
+  gap: 8%;
 }
 .info-about h5,
 .info-service h5,
 .info-training h5 {
   margin-top: 15px;
   margin-bottom: 2px;
-  font-size: 17px;
+  font-size: 22px;
   color: #15478c;
-}
-.info-training {
-  width: 10%;
 }
 .info-contact h5 {
   margin-top: 15px;
   margin-bottom: 2px;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 600;
   color: #15478c;
   width: 80%;
@@ -259,7 +255,7 @@ body {
 .info-service span,
 .info-training span,
 .info-contact {
-  font-size: 15px;
+  font-size: 19px;
   color: #15478c;
 }
 .info-contact button {

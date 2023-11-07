@@ -58,7 +58,7 @@ body {
   position: absolute;
   width: 15vw;
   color: #202223;
-  padding: 8px 8px 0px 8px;
+  padding: 8px 8px 8px 8px;
   border-radius: 8px;
   box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
     0px 8px 20px -4px rgba(23, 24, 24, 0.12);
@@ -102,6 +102,10 @@ body {
   min-height: 130vh;
   background-size: cover;
   color: white;
+}
+.home-section a {
+  color: #fff;
+  text-decoration: none;
 }
 .home-section div {
   position: relative;
@@ -152,11 +156,11 @@ body {
   background-color: #f4f2f2;
   border-radius: 8.02px 8.02px 0px 0px;
   padding: 16px 16px;
+  font-weight: 600;
   font-size: 19.06px;
   color: #0047b3;
 }
 .box1 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
   font-size: 22px;
@@ -172,10 +176,10 @@ body {
   border-radius: 8.02px 8.02px 0px 0px;
   padding: 16px 16px;
   font-size: 19.06px;
+  font-weight: 600;
   color: #0047b3;
 }
 .box2 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
   font-size: 22px;
@@ -190,11 +194,11 @@ body {
   background-color: #f4f2f2;
   border-radius: 8.02px 8.02px 0px 0px;
   padding: 16px 16px;
+  font-weight: 600;
   font-size: 19.06px;
   color: #0047b3;
 }
 .box3 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
   font-size: 22px;
@@ -408,6 +412,9 @@ body {
 .schedule2 {
   text-align: center;
 }
+.schedule2 img {
+  margin-top: 5%;
+}
 .schedule2 button {
   background-color: #fff;
   color: #19345c;
@@ -440,12 +447,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.info-about {
+  width: 10%;
+}
 .info-address {
-  font-size: 19px;
+  font-size: 15px;
   color: #15478c;
+  width: 18%;
 }
 .info-address h5 {
-  font-size: 22px;
+  font-size: 19px;
   margin-bottom: 2px;
 }
 .info-address img {
@@ -454,20 +465,23 @@ body {
 .info-about,
 .info-service,
 .info-training {
-  gap: 8%;
+  gap: 6%;
 }
 .info-about h5,
 .info-service h5,
 .info-training h5 {
   margin-top: 15px;
   margin-bottom: 2px;
-  font-size: 22px;
+  font-size: 17px;
   color: #15478c;
+}
+.info-training {
+  width: 10%;
 }
 .info-contact h5 {
   margin-top: 15px;
   margin-bottom: 2px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   color: #15478c;
   width: 80%;
@@ -476,7 +490,7 @@ body {
 .info-service span,
 .info-training span,
 .info-contact {
-  font-size: 19px;
+  font-size: 15px;
   color: #15478c;
 }
 .info-contact button {
@@ -490,4 +504,20 @@ body {
   color: #fff;
   justify-content: space-around;
   padding: 2.4%;
+}
+.footer a {
+  color: #fff;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 6%;
+  right: -10%;
+  display: flex;
+  flex-direction: column;
+}
+.whatsapp span {
+  color: #19345c;
+}
+.whatsapp img {
+  width: 20%;
 }

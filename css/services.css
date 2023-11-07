@@ -58,7 +58,7 @@ body {
   position: absolute;
   width: 15vw;
   color: #202223;
-  padding: 8px 8px 0px 8px;
+  padding: 8px 8px 8px 8px;
   border-radius: 8px;
   box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
     0px 8px 20px -4px rgba(23, 24, 24, 0.12);
@@ -109,7 +109,7 @@ body {
   font-family: "Clash Grotesk";
   position: relative;
   top: 12em;
-  left: 3%;
+  left: 10%;
 }
 .home-section p {
   font-size: 24px;
@@ -117,7 +117,7 @@ body {
   font-family: "Clash Grotesk";
   position: relative;
   top: 22em;
-  left: 3%;
+  left: 10%;
 }
 /* SECTION */
 .services-container {
@@ -187,24 +187,74 @@ body {
   font-size: 22px;
 }
 /* QUESTIONS */
+.questions {
+  margin-left: 10%;
+  margin-bottom: 4%;
+}
 .faq-item {
   background-color: blue;
-  padding: 10px;
+  padding: 2%;
+  border-radius: 12px;
+  color: #fff;
   margin: 10px 0;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 84%;
 }
 .faq-item.clicked {
-  background-color: yellow;
+  background-color: #f4f2f2;
+  color: black;
+}
+.faq-item.clicked .dropdown-icon {
+  transform: rotate(180deg);
 }
 .question {
   font-weight: bold;
   cursor: pointer;
 }
+.d1 {
+  margin-left: 70%;
+}
+.d2 {
+  margin-left: 71.3%;
+}
+.d3 {
+  margin-left: 57%;
+}
+.d4 {
+  margin-left: 58.4%;
+}
+.d5 {
+  margin-left: 72.5%;
+}
+.d6 {
+  margin-left: 80.3%;
+}
+.d7 {
+  margin-left: 70%;
+}
+.d8 {
+  margin-left: 75.5%;
+}
+.d9 {
+  margin-left: 75%;
+}
+.d10 {
+  margin-left: 58.7%;
+}
+.d11 {
+  margin-left: 61.8%;
+}
+.d12 {
+  margin-left: 60.9%;
+}
+.d13 {
+  margin-left: 56.6%;
+}
 .answer {
   display: none;
   padding: 10px;
-  background-color: yellow;
+  background-color: #f4f2f2;
   transition: display 0.3s, background-color 0.3s;
 }
 

@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Clash Grotesk";
+}
+.appointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+.booking-header h3 {
+  color: #091e42;
+  font-size: 38px;
+  font-weight: 600;
+  width: 80%;
+  margin-bottom: 1%;
+}
+.booking-form {
+  margin-left: -6.5%;
+}
+.booking-header p {
+  color: #667085;
+  font-size: 18px;
+}
+.booking-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5%;
+}
+.booking-name,
+.booking-email,
+.form-group,
+.booking-message label {
+  font-size: 20px;
+  color: #091e42;
+}
+.booking-email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5%;
+}
+.booking-message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5%;
+}
+
+.booking-name input {
+  padding: 5%;
+  width: 120%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.2px solid #d0d5dd;
+}
+.booking-email input {
+  padding: 5%;
+  width: 120%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.2px solid #d0d5dd;
+}
+.form-group input {
+  padding: 5%;
+  width: 130%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.2px solid #d0d5dd;
+}
+.booking-message textarea {
+  padding: 5%;
+  width: 120%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.2px solid #d0d5dd;
+}
+.booking-policy {
+  margin-bottom: 5%;
+}
+.btn2 {
+  padding: 15px 23px;
+  border-radius: 5.65px;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, green 0%, blue 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.btn2:hover {
+  background-position: -100% 0;
+  cursor: pointer;
+}

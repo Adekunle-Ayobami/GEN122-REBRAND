@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/about.css" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="css/pricing.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -50,75 +50,53 @@
 
     <section>
       <div class="home-section">
-        <h3>About Us</h3>
+        <h3>Pricing</h3>
         <p>
-          Gen122 healthcare is committed to providing our learners with the
-          skills and knowledge they need to be successful.
+          Ready to start improving lives through learning? <br />
+          Check out prices for each training
         </p>
       </div>
-      <div class="training">
-        <div>
-          <img src="/svgs/medium-shot-people-chatting-meeting 1.png" alt="" />
-        </div>
-        <div class="training-container">
-          <p>
-            GEN122 Healthcare supplies Health Care Professionals to Medical &
-            Social Care organizations in England, Scotland, Wales & Ireland. Our
-            Care Certificate training course is geared at training and equipping
-            participants with the requisite information, knowledge, skill &
-            exposure to work as a Health Care Assistant or Care Worker. We are
-            committed to providing a personalized & professional service to our
-            Clients.
-          </p>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="gallery-text">GALLERY</div>
-        <div class="gallery-container">
-          <div class="sub-gallery">
-            <img
-              class="gallery-image"
-              src="svgs/whatsapp-image-20221214-at-1026@2x.png"
-              alt=""
-            />
-            <img
-              class="gallery-image"
-              src="svgs/skype-picture-2023-07-03t09-07-38-856z@2x.png"
-              alt=""
-            />
-            <img
-              class="gallery-image"
-              src="svgs/skype-picture-2023-07-03t09-07-53-798z@2x.png"
-              alt=""
-            />
+      <div class="services-container">
+        <div class="services">
+          <div class="box1">
+            <div>
+              <h4>Healthcare Training Fee</h4>
+              <span>N200K</span>
+              <p>4 Weeks training</p>
+            </div>
+            <ul>
+              <li>Job placement availability in 3-months</li>
+              <li>Job links to Car homes with Visa sponsorship</li>
+              <li>Internationally recognised certificate</li>
+              <li>Free consultancy on Visa Application</li>
+            </ul>
           </div>
-          <div class="sub-gallery">
-            <img
-              class="gallery-image"
-              src="svgs/skype-picture-2023-07-03t09-07-29-387z@2x.png"
-              alt=""
-            />
-            <img
-              class="gallery-image"
-              src="svgs/skype-picture-2023-07-03t09-08-00-842z@2x.png"
-              alt=""
-            />
-            <img
-              class="gallery-image"
-              src="svgs/whatsapp-image-20221205-at-2030@2x.png"
-              alt=""
-            />
+          <div class="box2">
+            <div>
+              <h4>Certified Nursing Assistant</h4>
+              <span>N400K</span>
+              <p>Full Time 6 Weeks</p>
+            </div>
+            <ul>
+              <li>Job placement availability in 3-months</li>
+              <li>Job links to Car homes with Visa sponsorship</li>
+              <li>Internationally recognised certificate</li>
+              <li>Free consultancy on Visa Application</li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <div class="apply">
-        <div>
-          <h3>Get Trained</h3>
-          <p>Gain expertise and confidence through our training programs</p>
-        </div>
-        <div>
-          <button class="btn">Apply Here</button>
+          <div class="box3">
+            <div>
+              <h4>IELTS Training</h4>
+              <span>N40K</span>
+              <p>Full Time 4 Weeks</p>
+            </div>
+            <ul>
+              <li>Condusive Learning environment</li>
+              <li>Training manual</li>
+              <li>Free conusultancy on IELTS exam process</li>
+              <li>Training sessions online and offline</li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- Information -->
@@ -131,7 +109,7 @@
             <img src="svgs/Untitled-1-removebg-preview (1) 1.png" alt="" />
             <h5>Office Address</h5>
             <span>31 UNity Road, Ikeja Lagos State</span>
-            <span>Email: htofficer@gn122.com</span>
+            <span>Email: csofficer@gn128.com</span>
           </div>
           <div class="info-about">
             <h5>About Us</h5>
@@ -148,7 +126,6 @@
           <div class="info-training">
             <h5>Training</h5>
             <span>Healthcare</span>
-            <span>Level 3 Diploma in Health & Social Care</span>
             <span>CNA</span>
             <span>IELTS</span>
           </div>
@@ -157,9 +134,7 @@
             <span>With the best of the best</span>
             <span>Email</span>
             <hr />
-            <a href="./booking-page.html"
-              ><button class="btn">GET IN TOUCH</button></a
-            >
+            <button class="btn">GET IN TOUCH</button>
           </div>
         </div>
       </div>
@@ -177,6 +152,26 @@
       </div>
     </footer>
     <script>
+      // Get all question and answer elements
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        // Add a click event listener to each question
+        const question = item.querySelector(".question");
+        const answer = item.querySelector(".answer");
+
+        question.addEventListener("click", () => {
+          // Toggle the display of the answer when the question is clicked
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+            item.classList.remove("clicked");
+          } else {
+            answer.style.display = "block";
+            item.classList.add("clicked");
+          }
+        });
+      });
+
       document.addEventListener("DOMContentLoaded", function () {
         const dropdownButton = document.getElementById("dropdown-button");
         const dropdownContent = document.getElementById("dropdown-content");
