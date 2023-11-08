@@ -16,6 +16,10 @@
       href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
   </head>
   <body>
     <header>
@@ -51,7 +55,71 @@
         <div>
           <h3>CARE WORKER CERTIFICATION TRAINING REGISTRATION FORM</h3>
         </div>
+        <form action="">
+          <div>
+            <label for="">First Name</label>
+            <input type="text" placeholder="John" />
+          </div>
+          <div>
+            <label for="">Last Name</label>
+            <input type="text" placeholder="Doe" />
+          </div>
+          <div>
+            <label for="">Gender</label>
+            <select name="" id="">
+              <option value="" selected style="display: none">
+                Choose an option
+              </option>
+              <option value="">Male</option>
+              <option value="">Female</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Date of Birth</label>
+            <input type="date" />
+          </div>
+          <div>
+            <label for="">Address (Current)</label>
+            <input type="text" placeholder="12, High Str, Lagos" />
+          </div>
+          <div>
+            <label for="">Nationality</label>
+            <input type="text" name="" id="" placeholder="Nigerian" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control" />
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="text" name="" id="" placeholder="sample@company.com" />
+          </div>
+          <div>
+            <label for="">Highest Level Qualification</label>
+            <select name="" id="">
+              <option value="">Choose an option</option>
+              <option value="">High School</option>
+              <option value="">Associate Degree (e.g., AA, AA)</option>
+              <option value="">Bachelor's Degree (e.g., BA, BS)</option>
+              <option value="">Masters Degree</option>
+              <option value="">Doctorate Degree (e.g., PhD, EdD)</option>
+            </select>
+          </div>
+          <div></div>
+        </form>
       </div>
     </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+    <script>
+      var input = document.querySelector("#phone");
+
+      var iti = window.intlTelInput(input, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
   </body>
 </html>
