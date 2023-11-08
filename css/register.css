@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 150vh;
+  font-family: "Clash Grotesk";
+}
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  background-color: #fff;
+  padding: 1% 0% 0% 5%;
+  border-bottom: 1px solid grey;
+  height: 82px;
+  gap: 30%;
+  box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-ul a {
+  text-decoration: none;
+}
+.nav-ul li {
+  list-style-type: none;
+  font-size: 18px;
+  color: #5fbc4d;
+}
+.nav-items ul {
+  display: flex;
+  gap: 50px;
+}
+.nav-btn {
+  margin-bottom: 1.5em;
+}
+.nav-btn button {
+  cursor: pointer;
+  display: flex;
+  width: 9vw;
+  gap: 20px;
+  font-size: 18px;
+  color: #5fbc4d;
+  font-family: Archivo;
+  background: none;
+  border: none;
+  outline: none;
+}
+.nav-btn i {
+  position: relative;
+  top: 0.7em;
+  right: 1em;
+}
+.nav-dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  width: 15vw;
+  color: #202223;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px -3px rgba(23, 24, 24, 0.08),
+    0px 8px 20px -4px rgba(23, 24, 24, 0.12);
+}
+.nav-dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.nav-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.nav-btn:hover .nav-dropdown {
+  display: block;
+}
+.btn {
+  padding: 15px 23px;
+  border-radius: 5.65px;
+  border: none;
+  color: white;
+  background: linear-gradient(to right, #96c0ff 0%, #5fbc4d 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.btn:hover {
+  background-position: -100% 0;
+  cursor: pointer;
+}
+.nav-dropdown div {
+  margin-bottom: 10px;
+}
+.nav-btn:hover + .nav-dropdown {
+  display: block;
+}
+/* REGISTRATION */
+.registration {
+  margin-top: 10%;
+}
