@@ -20,6 +20,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
+    <link
+      rel="icon"
+      href="svgs/Untitled-1-removebg-preview (1) 1.png"
+      type="image/png"
+    />
   </head>
   <body>
     <header>
@@ -39,6 +44,9 @@
               </button>
               <div class="nav-dropdown" id="dropdown-content">
                 <a href="./training.html">Healthcare Training</a>
+                <a href="./diploma.html"
+                  >Level 3 Diploma in Health & Social Care</a
+                >
                 <a href="./certification.html"
                   >Certified Nursing Assistant Training</a
                 >
@@ -46,25 +54,25 @@
               </div>
             </li>
             <a href="./pricing.html"><li>Pricing</li></a>
-            <li><button class="btn">Register</button></li>
+            <!-- <li><button class="btn">Register</button></li> -->
           </ul>
         </div>
       </nav>
 
       <div class="registration">
-        <div>
+        <div class="reg-head">
           <h3>CARE WORKER CERTIFICATION TRAINING REGISTRATION FORM</h3>
         </div>
-        <form action="">
-          <div>
+        <form class="reg-form" action="">
+          <div class="reg-firstname">
             <label for="">First Name</label>
             <input type="text" placeholder="John" />
           </div>
-          <div>
+          <div class="reg-lastname">
             <label for="">Last Name</label>
             <input type="text" placeholder="Doe" />
           </div>
-          <div>
+          <div class="reg-gender">
             <label for="">Gender</label>
             <select name="" id="">
               <option value="" selected style="display: none">
@@ -74,15 +82,15 @@
               <option value="">Female</option>
             </select>
           </div>
-          <div>
+          <div class="reg-dob">
             <label for="">Date of Birth</label>
             <input type="date" />
           </div>
-          <div>
+          <div class="reg-address">
             <label for="">Address (Current)</label>
             <input type="text" placeholder="12, High Str, Lagos" />
           </div>
-          <div>
+          <div class="reg-nation">
             <label for="">Nationality</label>
             <input type="text" name="" id="" placeholder="Nigerian" />
           </div>
@@ -90,11 +98,11 @@
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" class="form-control" />
           </div>
-          <div>
+          <div class="reg-email">
             <label for="email">Email Address</label>
             <input type="text" name="" id="" placeholder="sample@company.com" />
           </div>
-          <div>
+          <div class="reg-education">
             <label for="">Highest Level Qualification</label>
             <select name="" id="">
               <option value="">Choose an option</option>
@@ -105,7 +113,19 @@
               <option value="">Doctorate Degree (e.g., PhD, EdD)</option>
             </select>
           </div>
-          <div></div>
+          <div class="reg-others">
+            <label for="">If Others, Please specify</label>
+            <input type="text" placeholder="others" />
+          </div>
+          <div class="reg-refer">
+            <label for="">Referred By</label>
+            <input type="text" name="" id="" placeholder="Will Smith" />
+          </div>
+          <a href="./index.html">
+            <div>
+              <div class="btn">Submit</div>
+            </div>
+          </a>
         </form>
       </div>
     </header>

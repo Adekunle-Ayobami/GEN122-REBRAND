@@ -1,7 +1,11 @@
 body {
   margin: 0;
+  height: 120vh;
   overflow-x: hidden;
   font-family: "Clash Grotesk";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/svgs/black-female-doctor.png") no-repeat center fixed;
+  background-size: cover;
 }
 .appointment {
   display: flex;
@@ -12,7 +16,7 @@ body {
   margin-bottom: 4%;
 }
 .booking-header h3 {
-  color: #091e42;
+  color: white;
   font-size: 38px;
   font-weight: 600;
   width: 80%;
@@ -22,7 +26,7 @@ body {
   margin-left: -6.5%;
 }
 .booking-header p {
-  color: #667085;
+  color: white;
   font-size: 18px;
 }
 .booking-name {
@@ -36,7 +40,7 @@ body {
 .form-group,
 .booking-message label {
   font-size: 20px;
-  color: #091e42;
+  color: white;
 }
 .booking-email {
   display: flex;
@@ -88,16 +92,21 @@ body {
 .booking-policy {
   margin-bottom: 5%;
 }
-.btn2 {
+.booking-policy input {
+  cursor: pointer;
+}
+.btn {
   padding: 15px 23px;
+  width: 15%;
   border-radius: 5.65px;
   border: none;
   color: white;
   background: linear-gradient(to right, green 0%, blue 100%);
   background-size: 200% 100%;
   transition: background-position 0.3s ease-in-out;
+  margin-bottom: 15%;
 }
-.btn2:hover {
+.btn:hover {
   background-position: -100% 0;
   cursor: pointer;
 }

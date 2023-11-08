@@ -97,8 +97,8 @@ body {
 
 /* First Section */
 .home-section {
-  background-image: url("/svgs/image\ 14.png");
-  background-color: rgba(81, 81, 81, 0.31);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/svgs/image\ 14.png") no-repeat center fixed;
   min-height: 130vh;
   background-size: cover;
   color: white;
@@ -113,7 +113,6 @@ body {
 }
 .home-section p {
   font-size: 24px;
-  font-weight: 600;
   font-family: "Clash Grotesk";
   position: relative;
   top: 22em;
@@ -149,6 +148,15 @@ body {
   font-size: 36px;
   font-family: "Clash Grotesk";
 }
+.image {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.image.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* GALLERY */
 .gallery {
   border-radius: 12px;
@@ -172,6 +180,13 @@ body {
   height: 60vh;
   object-fit: cover;
   border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.gallery-image.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 .gallery-text {
   font-size: 36px;
@@ -265,7 +280,11 @@ body {
 .info-contact button {
   width: 50%;
 }
-
+.hr {
+  width: 70%;
+  margin-left: 0.1%;
+  color: #15294b;
+}
 /* FOOTER */
 .footer {
   display: flex;
@@ -273,4 +292,22 @@ body {
   color: #fff;
   justify-content: space-around;
   padding: 2.4%;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 6%;
+  right: -30%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.whatsapp span {
+  color: #268c15;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.whatsapp img {
+  width: 10%;
 }

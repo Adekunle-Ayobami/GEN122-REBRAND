@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-  height: 150vh;
+  height: 190vh;
   font-family: "Clash Grotesk";
 }
 /* NAVBAR */
@@ -75,19 +75,6 @@ body {
 .nav-btn:hover .nav-dropdown {
   display: block;
 }
-.btn {
-  padding: 15px 23px;
-  border-radius: 5.65px;
-  border: none;
-  color: white;
-  background: linear-gradient(to right, #96c0ff 0%, #5fbc4d 100%);
-  background-size: 200% 100%;
-  transition: background-position 0.3s ease-in-out;
-}
-.btn:hover {
-  background-position: -100% 0;
-  cursor: pointer;
-}
 .nav-dropdown div {
   margin-bottom: 10px;
 }
@@ -101,4 +88,84 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #091e42;
 }
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: -15%;
+}
+.reg-firstname,
+.reg-lastname,
+.reg-gender,
+.reg-dob,
+.reg-address,
+.reg-nation,
+.form-group,
+.reg-email,
+.reg-education,
+.reg-others,
+.reg-refer {
+  display: flex;
+  flex-direction: column;
+}
+.reg-form label {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 2%;
+  color: #091e42;
+}
+.reg-form input {
+  padding: 6%;
+  width: 170%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.3px solid #d0d5dd;
+}
+.form-group {
+  width: 107%;
+}
+.reg-form select {
+  padding: 6%;
+  width: 182%;
+  border-radius: 12px;
+  outline: none;
+  border: 1.3px solid #d0d5dd;
+}
+.reg-form a {
+  text-decoration: none;
+}
+.reg-gender select,
+.reg-education select {
+  cursor: pointer;
+}
+.reg-gender select option,
+.reg-education select option {
+  font-size: 20px;
+  padding-bottom: 5%;
+}
+.reg-others label {
+  font-size: 15px;
+}
+.btn {
+  padding: 10px 23px;
+  width: 17%;
+  border-radius: 5.65px;
+  border: none;
+  color: white;
+  /* background: linear-gradient(to right, green 0%, blue 100%);
+  background-size: 200% 100%; */
+  background-color: green;
+  transition: background-position 0.3s ease-in-out;
+  margin-bottom: 15%;
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+  cursor: pointer;
+}
+
+
+

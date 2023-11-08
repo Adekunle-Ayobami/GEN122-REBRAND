@@ -84,8 +84,22 @@ body {
   background-size: 200% 100%;
   transition: background-position 0.3s ease-in-out;
 }
+.btn1 {
+  padding: 15px 23px;
+  border-radius: 5.65px;
+  border: none;
+  color: #0047b3;
+  background: linear-gradient(to right, #fff 0%, blue 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease-in-out;
+}
 .btn:hover {
   background-position: -100% 0;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-position: -100% 0;
+  color: #fff;
   cursor: pointer;
 }
 .nav-dropdown div {
@@ -98,7 +112,7 @@ body {
 /* First Section */
 .home-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/svgs/image\ 13.png") no-repeat center fixed;
+    url("/svgs/black-female-doctor.png") no-repeat center fixed;
   background-size: cover;
   min-height: 130vh;
   background-size: cover;
@@ -109,103 +123,35 @@ body {
   font-weight: 600;
   font-family: "Clash Grotesk";
   position: relative;
-  top: 12em;
+  top: 13.5em;
   left: 10%;
 }
-.home-section p {
-  font-size: 23px;
-  font-family: "Clash Grotesk";
+.home-section button {
   position: relative;
-  top: 23em;
+  top: 45em;
   left: 10%;
 }
-/* SECTION */
-.services-container {
-  margin-top: 3%;
-  margin-bottom: 3%;
+
+/* TRAINING */
+.training {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 75%;
+  font-size: 18px;
+  color: #19345c;
+  font-weight: bold;
 }
-.services {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.box1 {
-  background-color: #fff;
-  width: 25vw;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8.02px;
-}
-.box1 div {
-  background-color: #5fbc4d;
-  border-radius: 8.02px 8.02px 0px 0px;
-  padding: 1% 10%;
-  font-size: 19.06px;
-  color: #fff;
-}
-.box1 h4 {
+.training li {
   margin-bottom: 1%;
-}
-.box1 p {
-  padding: 0px 16px 0px 0px;
-  margin-top: 1%;
-  font-size: 22px;
-}
-.box1 ul {
-  line-height: 30px;
-}
-.box2 {
-  background-color: #fff;
-  width: 25vw;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8.02px;
-}
-.box2 div {
-  background-color: #5fbc4d;
-  border-radius: 8.02px 8.02px 0px 0px;
-  padding: 1% 10%;
-  font-size: 19.06px;
-  color: #fff;
-}
-.box2 h4 {
-  margin-bottom: 1%;
-}
-.box2 p {
-  padding: 0px 16px 0px 0px;
-  margin-top: 1%;
-  font-size: 22px;
-}
-.box2 ul {
-  line-height: 30px;
-}
-.box3 {
-  background-color: #fff;
-  width: 25vw;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8.02px;
-}
-.box3 div {
-  background-color: #5fbc4d;
-  border-radius: 8.02px 8.02px 0px 0px;
-  padding: 1% 10%;
-  font-size: 19.06px;
-  color: #fff;
-}
-.box3 h4 {
-  margin-bottom: 1%;
-}
-.box3 p {
-  padding: 0px 16px 0px 0px;
-  margin-top: 1%;
-  color: #fff;
-  font-size: 22px;
-}
-.box3 ul {
-  line-height: 30px;
 }
 /* QUESTIONS */
 .questions {
   margin-left: 10%;
   margin-bottom: 4%;
+}
+.questions h3 {
+  font-size: 25px;
+  color: #19345c;
 }
 .faq-item {
   background-color: blue;
@@ -229,71 +175,25 @@ body {
   cursor: pointer;
 }
 .d1 {
-  margin-left: 70%;
+  margin-left: 56%;
 }
 .d2 {
-  margin-left: 71.3%;
+  margin-left: 55.5%;
 }
 .d3 {
-  margin-left: 57%;
-}
-.d4 {
-  margin-left: 58.4%;
-}
-.d5 {
-  margin-left: 72.5%;
-}
-.d6 {
-  margin-left: 80.3%;
-}
-.d7 {
-  margin-left: 70%;
-}
-.d8 {
-  margin-left: 75.5%;
-}
-.d9 {
-  margin-left: 75%;
-}
-.d10 {
-  margin-left: 58.7%;
-}
-.d11 {
-  margin-left: 61.8%;
-}
-.d12 {
-  margin-left: 60.9%;
-}
-.d13 {
-  margin-left: 56.6%;
+  margin-left: 27.5%;
 }
 .answer {
   display: none;
   padding: 10px;
   background-color: #f4f2f2;
+  font-size: 17px;
   transition: display 0.3s, background-color 0.3s;
 }
-/* APPLY HERE */
-.apply {
-  display: flex;
-  background-color: #15478c;
-  color: #fff;
-  justify-content: space-around;
-}
-.apply h3 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: -3%;
-}
-.apply p {
-  font-size: 24px;
-  width: 60%;
-}
-.apply button {
-  margin-top: 70%;
-}
+
 /* INFORMATION */
 .info-container {
+  margin-top: 2%;
   background-color: #f4f2f2;
   padding-bottom: 4%;
 }
@@ -364,7 +264,6 @@ body {
   margin-left: 0.1%;
   color: #15294b;
 }
-
 /* FOOTER */
 .footer {
   display: flex;
