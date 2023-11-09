@@ -40,7 +40,6 @@ body {
   gap: 20px;
   font-size: 18px;
   color: #5fbc4d;
-  font-family: Archivo;
   background: none;
   border: none;
   outline: none;
@@ -180,19 +179,13 @@ body {
   cursor: pointer;
 }
 .d1 {
-  margin-left: 67.6%;
+  margin-left: 79%;
 }
 .d2 {
-  margin-left: 63.6%;
+  margin-left: 72%;
 }
 .d3 {
-  margin-left: 78.6%;
-}
-.d4 {
-  margin-left: 81.7%;
-}
-.d5 {
-  margin-left: 76%;
+  margin-left: 57.5%;
 }
 .answer {
   display: none;
