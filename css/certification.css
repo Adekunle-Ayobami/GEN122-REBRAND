@@ -277,7 +277,9 @@ body {
   justify-content: space-around;
   padding: 2.4%;
 }
-
+.footer a {
+  color: #fff;
+}
 .whatsapp {
   position: fixed;
   bottom: 6%;
@@ -294,4 +296,22 @@ body {
 }
 .whatsapp img {
   width: 10%;
+}
+
+@media (min-width: 1368px) {
+  .d1 {
+    margin-left: 77%;
+  }
+  .d2 {
+    margin-left: 73.8%;
+  }
+  .d3 {
+    margin-left: 84.5%;
+  }
+  .d4 {
+    margin-left: 86.6%;
+  }
+  .d5 {
+    margin-left: 73%;
+  }
 }

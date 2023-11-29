@@ -142,10 +142,9 @@ body {
   color: #0047b3;
 }
 .box1 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
-  font-size: 22px;
+  font-size: 20px;
 }
 .box2 {
   background-color: #fff;
@@ -161,10 +160,9 @@ body {
   color: #0047b3;
 }
 .box2 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
-  font-size: 22px;
+  font-size: 20px;
 }
 .box3 {
   background-color: #fff;
@@ -180,10 +178,9 @@ body {
   color: #0047b3;
 }
 .box3 p {
-  font-family: Archivo;
   padding: 1px 16px 10px 16px;
   color: #19345c;
-  font-size: 22px;
+  font-size: 20px;
 }
 /* QUESTIONS */
 .questions {
@@ -338,6 +335,9 @@ body {
   justify-content: space-around;
   padding: 2.4%;
 }
+.footer a {
+  color: #fff;
+}
 .whatsapp {
   position: fixed;
   bottom: 6%;
@@ -354,4 +354,47 @@ body {
 }
 .whatsapp img {
   width: 10%;
+}
+
+
+@media (min-width: 1368px) {
+  .d1 {
+    margin-left: 80%;
+  }
+  .d2 {
+    margin-left: 81%;
+  }
+  .d3 {
+    margin-left: 70.5%;
+  }
+  .d4 {
+    margin-left: 71.5%;
+  }
+  .d5 {
+    margin-left: 82%;
+  }
+  .d6 {
+    margin-left: 88%;
+  }
+  .d7 {
+    margin-left: 80%;
+  }
+  .d8 {
+    margin-left: 84%;
+  }
+  .d9 {
+    margin-left: 84%;
+  }
+  .d10 {
+    margin-left: 73%;
+  }
+  .d11 {
+    margin-left: 75.5%;
+  }
+  .d12 {
+    margin-left: 75%;
+  }
+  .d13 {
+    margin-left: 71.5%;
+  }
 }

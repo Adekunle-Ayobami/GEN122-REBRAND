@@ -292,6 +292,9 @@ body {
   justify-content: space-around;
   padding: 2.4%;
 }
+.footer a {
+  color: #fff;
+}
 
 .whatsapp {
   position: fixed;
